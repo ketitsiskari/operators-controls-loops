@@ -36,7 +36,7 @@ Write your code in `src/index.js.
 3. Clone your newly created repo: https://gitlab.com/<%your_gitlab_username%>/operators-controls-loops/  
 4. Go to folder `operators-controls-loops`  
 5. To install all dependencies use [`npm install`](https://docs.npmjs.com/cli/install)  
-6. Run `npm test` in the command line  
+6. Run `npm test` or `npm run test:local` in the command line  
 7. You will see the number of passing and failing tests
 
 ## Submit to [AutoCode](https://autocode.lab.epam.com/)
