@@ -29,9 +29,9 @@ module.exports.arrayDiff = function arrayDiff(array1, array2) {
  * @returns {Array}
  */
 module.exports.evenOrOdd = function evenOrOdd(x, y) {
-    var result = [];
+    let result = [];
   
-    for (var i = x; i <= y; i++) {
+    for (let i = x; i <= y; i++) {
       if (i % 2 === 0) {
         result.push(i + ' is even');
       } else {
@@ -49,9 +49,9 @@ module.exports.evenOrOdd = function evenOrOdd(x, y) {
  * @returns {Number}
  */
 module.exports.rangeSum = function rangeSum(x, y) {
-    var sum = 0;
+    let sum = 0;
 
-    for (var i = x; i <= y; i++) {
+    for (let i = x; i <= y; i++) {
         sum += i;
     }
 
