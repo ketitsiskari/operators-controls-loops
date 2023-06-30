@@ -5,9 +5,22 @@
  * @returns {Array}
  */
 module.exports.arrayDiff = function arrayDiff(array1, array2) {
-    // Your implementation here
-    throw new Error('Task not implemented');
-};
+    let difference = [];
+    
+    array1.forEach(function(element) {
+      if (!array2.includes(element)) {
+        difference.push(element);
+      }
+    });
+    
+    array2.forEach(function(element) {
+      if (!array1.includes(element)) {
+        difference.push(element);
+      }
+    });
+    
+    return difference;
+  };
 
 /**
  *
@@ -16,9 +29,18 @@ module.exports.arrayDiff = function arrayDiff(array1, array2) {
  * @returns {Array}
  */
 module.exports.evenOrOdd = function evenOrOdd(x, y) {
-    // Your implementation here
-    throw new Error('Task not implemented');
-};
+    var result = [];
+  
+    for (var i = x; i <= y; i++) {
+      if (i % 2 === 0) {
+        result.push(i + ' is even');
+      } else {
+        result.push(i + ' is odd');
+      }
+    }
+  
+    return result;
+  };
 
 /**
  *
@@ -27,6 +49,11 @@ module.exports.evenOrOdd = function evenOrOdd(x, y) {
  * @returns {Number}
  */
 module.exports.rangeSum = function rangeSum(x, y) {
-    // Your implementation here
-    throw new Error('Task not implemented');
+    var sum = 0;
+
+    for (var i = x; i <= y; i++) {
+        sum += i;
+    }
+
+    return sum;
 };
